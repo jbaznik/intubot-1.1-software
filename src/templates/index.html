@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- made with love by Pascal -->
+    <title>Intubot 1.1</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <script src="{{ url_for('static', filename='animations.js') }}" defer></script>
+    <!--<script src="{{ url_for('static', filename='matrix.js') }}" defer></script>//-->
+  </head>
+
+  <body>
+    <div id="content">
+      <img
+        src="{{ url_for('static', filename='logo-white.png') }}"
+        alt="aiEndoscopic"
+        width="100"
+        height="100"
+        id="logo"
+      />
+      <img src="{{ url_for('video_feed') }}" id="video" />
+      <div id="borderbox"></div>
+      <div id="messagebox"></div>
+      <div id="expertmode">
+        <div id="databox"></div>
+        <canvas id="deflection" width="200" height="200"></canvas>
+        <!--<canvas id="matrix" style="display: block"></canvas>//-->
+      </div>
+    </div>
+  </body>
+</html>

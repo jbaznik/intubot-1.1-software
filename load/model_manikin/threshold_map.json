@@ -1,0 +1,9 @@
+{
+  "trachea": 0.5,
+  "epiglottis": 0.5,  
+  "uvula": 0.5,
+  "laryngoscope": 0.5,
+  "vocalFold": 0.5,
+  "cartilage": 0.5,
+  "face": 0.5
+}

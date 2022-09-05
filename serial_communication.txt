@@ -1,0 +1,33 @@
+FROM TEENSY TO PYTHON
+----------------------
+Bytes 0-3:   motor 1 pos
+Bytes 4-7:   motor 2 pos
+Bytes 8-11:  motor 3 pos
+Bytes 12-15: motor 4 pos
+Bytes 16-19: motor 5 pos
+Byte 20:     automated button
+Byte 21:     hall sensor
+Byte 22:     joystick left button
+Byte 23:     joystick right button
+Byte 24-25:  power switch
+Bytes 26-27: joystick left X
+Bytes 28-29: joystick left Y
+Bytes 30-31: joystick right X
+Bytes 32-33: joystick right Y
+Bytes 34-35: analog rocker
+Bytes 36-38: end flag (UUU)
+
+
+FROM PYTHON TO TEENSY
+----------------------
+M1R: motor 1 (-255 .. +255)
+M2R: motor 2 (-255 .. +255)
+M3R: motor 3 (-255 .. +255)
+M4R: motor 4 (-255 .. +255)
+M5R: motor 5 (-255 .. +255)
+LA: LED value (0 .. 255)
+LD: LED value (0 .. 255)
+S: stop value (0, 1)
+Z: end flag
+
+e.g. M1R-10M2R112M3R55L10Z
